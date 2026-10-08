@@ -1,0 +1,133 @@
+﻿<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 600">
+
+<defs>
+
+    <radialGradient id="bg">
+        <stop offset="0%" stop-color="#302477"/>
+        <stop offset="100%" stop-color="#070b18"/>
+    </radialGradient>
+
+    <linearGradient id="purple" x1="0%" y1="0%" x2="100%" y2="100%">
+        <stop offset="0%" stop-color="#8b7cff"/>
+        <stop offset="100%" stop-color="#d25cff"/>
+    </linearGradient>
+
+    <filter id="glow">
+        <feGaussianBlur stdDeviation="8" result="blur"/>
+        <feMerge>
+            <feMergeNode in="blur"/>
+            <feMergeNode in="SourceGraphic"/>
+        </feMerge>
+    </filter>
+
+</defs>
+
+
+<rect width="800" height="600" rx="40" fill="url(#bg)"/>
+
+
+<circle
+    cx="400"
+    cy="300"
+    r="170"
+    fill="none"
+    stroke="#8b7cff"
+    stroke-width="2"
+    opacity="0.4"
+/>
+
+
+<ellipse
+    cx="400"
+    cy="300"
+    rx="270"
+    ry="100"
+    fill="none"
+    stroke="#8b7cff"
+    stroke-width="2"
+    opacity="0.5"
+    transform="rotate(25 400 300)"
+/>
+
+
+<ellipse
+    cx="400"
+    cy="300"
+    rx="270"
+    ry="100"
+    fill="none"
+    stroke="#d25cff"
+    stroke-width="2"
+    opacity="0.5"
+    transform="rotate(-25 400 300)"
+/>
+
+
+<path
+    d="M330 220
+       C290 230 270 280 285 330
+       C300 385 350 410 400 395
+       C450 410 500 385 515 330
+       C530 280 510 230 470 220
+       C450 180 410 170 400 200
+       C390 170 350 180 330 220Z"
+    fill="none"
+    stroke="url(#purple)"
+    stroke-width="10"
+    filter="url(#glow)"
+/>
+
+
+<line x1="320" y1="260" x2="400" y2="300"
+      stroke="#9b91ff" stroke-width="4"/>
+
+<line x1="480" y1="260" x2="400" y2="300"
+      stroke="#9b91ff" stroke-width="4"/>
+
+<line x1="320" y1="340" x2="400" y2="300"
+      stroke="#d25cff" stroke-width="4"/>
+
+<line x1="480" y1="340" x2="400" y2="300"
+      stroke="#d25cff" stroke-width="4"/>
+
+
+<circle cx="320" cy="260" r="10"
+        fill="#a99cff" filter="url(#glow)"/>
+
+<circle cx="480" cy="260" r="10"
+        fill="#a99cff" filter="url(#glow)"/>
+
+<circle cx="320" cy="340" r="10"
+        fill="#d25cff" filter="url(#glow)"/>
+
+<circle cx="480" cy="340" r="10"
+        fill="#d25cff" filter="url(#glow)"/>
+
+<circle cx="400" cy="300" r="18"
+        fill="#ffffff" filter="url(#glow)"/>
+
+
+<text
+    x="400"
+    y="510"
+    text-anchor="middle"
+    font-family="Arial"
+    font-size="34"
+    font-weight="bold"
+    fill="white">
+    AI VISION
+</text>
+
+
+<text
+    x="400"
+    y="550"
+    text-anchor="middle"
+    font-family="Arial"
+    font-size="15"
+    letter-spacing="5"
+    fill="#a99cff">
+    INNOVATE • BUILD • LEAD
+</text>
+
+</svg>
